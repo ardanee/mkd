@@ -1,7 +1,10 @@
 OK--Comprar sitio
-formularios con recaptcha (FALTA PHP)
-galeria nuevo templo 
-agregar dirección en como llegar
+OK--galeria nuevo templo
 OK--botón paypa gilespi04@yahoo.com gespinozac16 
+OK--agregar dirección en como llegar
+formularios con recaptcha (FALTA PHP)
+apariencia necesitas oración y en que creemos
+Información Pastora
+Menú movil ver si se puede mejorar
 
 --------------------------------------------------------
