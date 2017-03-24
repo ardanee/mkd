@@ -117,12 +117,12 @@ a:hover, a:focus {
 }
 
 .description {
-	padding: 6em 8em;
+	padding: 1em 8em;
 	overflow: hidden;
 }
 
 .description p {
-	font-size: 200%;
+	font-size: 1em;
 	text-align: center;
 	max-width: 800px;
 }
