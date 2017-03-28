@@ -13,7 +13,9 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/alertify.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/fullscreenmodal.css">    
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
@@ -29,12 +31,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
     <link rel="manifest" href="img/icon/manifest.json">
     <link rel="shortcut icon" href="../favicon.ico">
-    
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <!--link rel="stylesheet" type="text/css" href="css/demo.css" /-->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.min.js"></script>
-    
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -50,6 +50,7 @@
         #map {
             height: 100%;
         }
+        
     </style>
     <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
     <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
@@ -159,12 +160,12 @@
         </div>
     </section>
     <!--Top_content-->
-  <div class="separator"></div>
+    <div class="separator"></div>
     <!--Service-->
     <section id="pastores">
         <h2>Pastores</h2>
         <div class="client_area ">
-                      <div class="client_section animated  slideInLeft wow">
+            <div class="client_section animated  slideInLeft wow">
                 <div class="client_profile">
                     <div class="client_profile_pic"><img src="img/client-pic1.jpg" alt=""></div>
                     <h3>Gildardo Espinoza C.</h3> <span>Pastor general</span> </div>
@@ -190,7 +191,6 @@
     </section>
     <!--Service-->
     <div class="separator"></div>
-    
     <section id="enquecreemos">
         <!--main-section-start-->
         <div class="top_cont_latest wow animate slideInLeft ">
@@ -295,29 +295,26 @@
     </section>
     <section id="oracion">
         <!-- Container -->
-       
-           
-                <h2>¿Necesitas Oración?</h2> 
-     
+        <h2>¿Necesitas Oración?</h2>
         <!-- Container -->
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8" style="margin:0 auto; float:none;">
                 <div class="texto">
-                <p> Si estás pasando por un momento difícil en tu vida, recuerda que la palabra del señor dice en Sn. Juan 5:14: <strong>"Y esta es la confianza que tenemos delante de Él, que si pedimos cualquier cosa conforme a su voluntad, Él nos oye." </strong> </p>
-                <br>
-                <p> Jeremías 29:11 <strong>"Mis planes para ustedes solamente yo los sé, y no son para su mal, sino para su bien. Voy a darles un futuro lleno de bienestar"</strong>. </p>
-                <br>
-                <p> Todo un equipo de intercesión está interesado en apoyarte con oración en este momento de dificultad o aflicción, si deseas que oremos por ti por favor llena esta sección con tus datos.
-                    <br>La información ingresada se manejará con completa ética, confidencialidad y discreción. </p>
+                    <p> Si estás pasando por un momento difícil en tu vida, recuerda que la palabra del señor dice en Sn. Juan 5:14: <strong>"Y esta es la confianza que tenemos delante de Él, que si pedimos cualquier cosa conforme a su voluntad, Él nos oye." </strong> </p>
+                    <br>
+                    <p> Jeremías 29:11 <strong>"Mis planes para ustedes solamente yo los sé, y no son para su mal, sino para su bien. Voy a darles un futuro lleno de bienestar"</strong>. </p>
+                    <br>
+                    <p> Todo un equipo de intercesión está interesado en apoyarte con oración en este momento de dificultad o aflicción, si deseas que oremos por ti por favor llena esta sección con tus datos.
+                        <br>La información ingresada se manejará con completa ética, confidencialidad y discreción. </p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8" style="margin:0 auto; float:none;">
-                <form id="frmOracion" action="0x49587xad2547boxs.php" method="post">
-                    <input class="input-text animated wow flipInY delay-02s" type="text" name="txtNombre" id="txtNombre" value="Nombre *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                    <input class="input-text animated wow flipInY delay-02s" type="text" name="txtCorreoElectronico" id="txtCorreoElectronico" value="Correo Electrónico *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                    <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" name="txtPeticion" id="txtPeticion" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Petición *</textarea>
-                    <input type="hidden" value="contacto" id="typeForm" name="typeForm">
-                    <input class="input-btn animated wow flipInY delay-08s" type="submit" value="Enviar"> </form>
+                <form id="frmOracion" action="" method="">
+                    <input class="input-text animated wow flipInY delay-02s" type="text" name="txtNombreO" id="txtNombreO" value="Nombre *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                    <input class="input-text animated wow flipInY delay-02s" type="text" name="txtCorreoElectronicoO" id="txtCorreoElectronicoO" value="Correo Electrónico *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                    <textarea class="input-text text-area animated wow flipInY delay-02s" cols="0" rows="0" name="txtContenidoO" id="txtContenidoO" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Petición *</textarea>
+                    <input type="hidden" value="oracion" id="typeFormO" name="typeFormO">
+                    <input class="input-btn animated wow flipInY delay-02s" type="button" value="Enviar" id="btnEnviarO"> </form>
             </div>
         </div>
         <!--/Project Page Holder-->
@@ -359,13 +356,13 @@
                         </ul>
                     </div>
                     <div class="col-lg-6 wow fadeInUp delay-06s">
-                        <form id="frmContact" action="boxs.php" method="post">
+                        <form id="frmContact" action="" method="">
                             <div class="form">
-                                <input class="input-text animated wow flipInY delay-02s" type="text" id="cNombre" name="cNombre" value="Nombre *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                                <input class="input-text animated wow flipInY delay-04s" type="email" id="cCorreoElectronico" name="cCorreoElectronico" value="Correo Electrónico *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                                <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" id="cMensaje" name="cMensaje">Tu mensaje *</textarea>
-                                <input type="hidden" value="contacto" id="typeForm" name="typeForm">
-                                <input class="input-btn animated wow flipInY delay-08s" type="submit" value="Enviar"> </div>
+                                <input class="input-text animated wow flipInY delay-02s" type="text" id="txtNombreC" name="txtNombreC" value="Nombre *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-02s" type="email" id="txtCorreoElectronicoC" name="txtCorreoElectronicoC" value="Correo Electrónico *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <textarea class="input-text text-area animated wow flipInY delay-02s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" id="txtContenidoC" name="txtContenidoC">Tu mensaje *</textarea>
+                                <input type="hidden" value="contacto" id="typeFormC" name="typeFormC">
+                                <input class="input-btn animated wow flipInY delay-02s" type="button" value="Enviar" id="btnEnviarC"> </div>
                         </form>
                     </div>
                 </div>
@@ -378,69 +375,62 @@
         <!--main-section team-start-->
         <div class="container">
             <section class="galeriaNuevoTemplo" id="galeriaNuevoTemplo">
-               
-                    <h2 style="color:#000;">Nuevo templo</h2>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <div class="container" style="margin-top:-5px">
-                                
-                     
-                                <div class="text text-center">
-                                    <p>Bajo la guianza del padre se ha iniciado la construcción del nuevo templo.</p>
-                                    
-                                    <p><strong>Clic en galería para ver las fotos.</strong></p>
-                                </div>
-                                <section id="photostack-1" class="photostack photostack-start">
-                                    <div>
-                                        <figure>
-                                            <a href="img/nuevotemplo/01.jpg" class="photostack-img"><img src="img/nuevotemplo/01.jpg" alt="img01" /></a>
-                                            <figcaption>
-                                                <h2 class="photostack-title"></h2> </figcaption>
-                                        </figure>
-                                        <figure>
-                                            <a href="img/nuevotemplo/02.jpg" class="photostack-img"><img src="img/nuevotemplo/02.jpg" alt="img02" /></a>
-                                            <figcaption>
-                                                <h2 class="photostack-title"></h2> </figcaption>
-                                        </figure>
-                                        <figure>
-                                            <a href="img/nuevotemplo/03.jpg" class="photostack-img"><img src="img/nuevotemplo/03.jpg" alt="img03" /></a>
-                                            <figcaption>
-                                                <h2 class="photostack-title"></h2> </figcaption>
-                                        </figure>
-                                        <figure>
-                                            <a href="img/nuevotemplo/01.jpg" class="photostack-img"><img src="img/nuevotemplo/01.jpg" alt="img04" /></a>
-                                            <figcaption>
-                                                <h2 class="photostack-title"></h2> </figcaption>
-                                        </figure>
-                                       
-                                    </div>
-                                </section>
-                               
+                <h2 style="color:#000;">Nuevo templo</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="container" style="margin-top:-5px">
+                            <div class="text text-center">
+                                <p>Bajo la guianza del padre se ha iniciado la construcción del nuevo templo.</p>
+                                <p><strong>Clic en galería para ver las fotos.</strong></p>
                             </div>
-                            <!-- /container -->
-                            <script src="js/classie.js"></script>
-                            <script src="js/photostack.js"></script>
-                            <script>
-                                // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
-                                new Photostack(document.getElementById('photostack-1'), {
-                                    callback: function (item) {
-                                        //console.log(item)
-                                    }
-                                });
-                                new Photostack(document.getElementById('photostack-2'), {
-                                    callback: function (item) {
-                                        //console.log(item)
-                                    }
-                                });
-                                new Photostack(document.getElementById('photostack-3'), {
-                                    callback: function (item) {
-                                        //console.log(item)
-                                    }
-                                });
-                            </script>
+                            <section id="photostack-1" class="photostack photostack-start">
+                                <div>
+                                    <figure>
+                                        <a data-img="img/nuevotemplo/01.jpg" class="photostack-img"><img src="img/nuevotemplo/01.jpg" alt="img01" /></a>
+                                        <figcaption>
+                                            <h2 class="photostack-title"></h2> </figcaption>
+                                    </figure>
+                                    <figure>
+                                        <a data-img="img/nuevotemplo/02.jpg" class="photostack-img"><img src="img/nuevotemplo/02.jpg" alt="img02" /></a>
+                                        <figcaption>
+                                            <h2 class="photostack-title"></h2> </figcaption>
+                                    </figure>
+                                    <figure>
+                                        <a data-img="img/nuevotemplo/03.jpg" class="photostack-img"><img src="img/nuevotemplo/03.jpg" alt="img03" /></a>
+                                        <figcaption>
+                                            <h2 class="photostack-title"></h2> </figcaption>
+                                    </figure>
+                                    <figure>
+                                        <a data-img="img/nuevotemplo/01.jpg" class="photostack-img"><img src="img/nuevotemplo/01.jpg" alt="img04" /></a>
+                                        <figcaption>
+                                            <h2 class="photostack-title"></h2> </figcaption>
+                                    </figure>
+                                </div>
+                            </section>
                         </div>
+                        <!-- /container -->
+                        <script src="js/classie.js"></script>
+                        <script src="js/photostack.js"></script>
+                        <script>
+                            // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+                            new Photostack(document.getElementById('photostack-1'), {
+                                callback: function (item) {
+                                    //console.log(item)
+                                }
+                            });
+                            new Photostack(document.getElementById('photostack-2'), {
+                                callback: function (item) {
+                                    //console.log(item)
+                                }
+                            });
+                            new Photostack(document.getElementById('photostack-3'), {
+                                callback: function (item) {
+                                    //console.log(item)
+                                }
+                            });
+                        </script>
                     </div>
-               
+                </div>
             </section>
         </div>
     </section>
@@ -467,6 +457,21 @@ You can buy this theme without footer links online at: http://bootstraptaste.com
 -->
         </div>
     </footer>
+    <!-- Modal fullscreen -->
+    <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel"></h4> </div>
+                <div class="modal-body" id="photoPanel"> </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal fullscreen -->
     <script type="text/javascript">
         $(document).ready(function (e) {
             $('#header_outer').scrollToFixed();
@@ -645,6 +650,15 @@ return false;
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk0UL5U1N3sO1gWpS8p_8-hdhjA4G9AX8&callback=initMap" async defer></script>
+    <script src="js/alertify.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/fullscreenmodal.js"></script>
+    <script>
+            $('.photostack-img').click(function () {
+            $('#photoPanel').html('<img src="' + $(this).data('img') + '">');
+            $('#modal-fullscreen').modal();
+        });
+    </script>
 </body>
 
 </html>
